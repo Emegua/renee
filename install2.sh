@@ -23,7 +23,8 @@ cd ..
 git clone https://github.com/NVIDIA/apex 
 cd apex
 git checkout 5c9625cfed681d4c96a0ca4406ea6b1b08c78164
-pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+pip install -v --disable-pip-version-check --no-build-isolation --no-cache-dir .
+# pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 cd ..
 # rm -rf apex
 
